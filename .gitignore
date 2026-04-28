@@ -2,7 +2,7 @@
 .env
 *.env
 
-# python
+# python cache
 __pycache__/
 *.pyc
 *.pyo
@@ -19,15 +19,14 @@ node_modules/
 .vscode/
 .DS_Store
 
-# cache/model files
-.cache/
-huggingface/
-torch/
-models/
+# generated raw A policy files
+A_policy_handover_v2/policy_master_20*.csv
+A_policy_handover_v2/policy_master_일자리_*.csv
+A_policy_handover_v2/policy_master_주거_*.csv
 
-# backups
+# backup/temp
 *_backup.py
 *.bak
 
-# large or temporary outputs
-*.log
+# verbose outputs
+D_retrieval/day4_test_outputs.jsonB_chunks/logs/
