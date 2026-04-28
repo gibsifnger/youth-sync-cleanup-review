@@ -1,4 +1,4 @@
-powershell -Command "@'
+powershell -NoProfile -Command "$content = @'
 # secrets
 .env
 *.env
@@ -34,4 +34,4 @@ D_retrieval/day4_test_outputs.json
 
 # logs
 B_chunks/logs/
-'@ | Set-Content -Encoding UTF8 .gitignore"
+'@; Set-Content -Path '.gitignore' -Value $content -Encoding UTF8"
