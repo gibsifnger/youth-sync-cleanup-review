@@ -1,4 +1,3 @@
-powershell -NoProfile -Command "$content = @'
 # secrets
 .env
 *.env
@@ -21,9 +20,8 @@ node_modules/
 .DS_Store
 
 # generated raw A policy files
-A_policy_handover_v2/policy_master_20*.csv
-A_policy_handover_v2/policy_master_일자리_*.csv
-A_policy_handover_v2/policy_master_주거_*.csv
+A_policy_handover_v2/policy_master_*.csv
+!A_policy_handover_v2/policy_master_final.csv
 
 # backup/temp
 *_backup.py
@@ -34,4 +32,3 @@ D_retrieval/day4_test_outputs.json
 
 # logs
 B_chunks/logs/
-'@; Set-Content -Path '.gitignore' -Value $content -Encoding UTF8"
