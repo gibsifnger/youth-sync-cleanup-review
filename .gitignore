@@ -1,3 +1,4 @@
+powershell -Command "@'
 # secrets
 .env
 *.env
@@ -29,4 +30,8 @@ A_policy_handover_v2/policy_master_주거_*.csv
 *.bak
 
 # verbose outputs
-D_retrieval/day4_test_outputs.jsonB_chunks/logs/
+D_retrieval/day4_test_outputs.json
+
+# logs
+B_chunks/logs/
+'@ | Set-Content -Encoding UTF8 .gitignore"
