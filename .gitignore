@@ -1,0 +1,33 @@
+# secrets
+.env
+*.env
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# virtual environments
+venv/
+.venv/
+
+# node
+node_modules/
+
+# local/editor
+.vscode/
+.DS_Store
+
+# cache/model files
+.cache/
+huggingface/
+torch/
+models/
+
+# backups
+*_backup.py
+*.bak
+
+# large or temporary outputs
+*.log
